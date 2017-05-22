@@ -12,9 +12,9 @@
 </head>
 <body ng-class="'mode_' + board.state.mode">
 <top-bar role="navigation">
-    <ul class="title-area" tooltip-placement="bottom" tooltip-html-unsafe="<b>J</b>ava<b>S</b>cript <b>F</b>ormal <b>L</b>anguage and <b>A</b>utomatta <b>P</b>ackage, <i>inspired by JFLAP</i>">
+    <ul class="title-area" tooltip-placement="bottom" tooltip-html-unsafe="<b>J</b>ava<b>S</b>cript <b>F</b>ormal <b>T</b>uring <b>M</b>achine <i>inspired by JSFLAP</i>">
         <li class="name">
-            <h1><a href="#"><i class="fa fa-caret-right"></i><i class="fa fa-circle"></i> JSFLAP <small>beta</small></a></h1>
+            <h1><a href="#"><i class="fa fa-caret-right"></i><i class="fa fa-circle"></i> TMJS <small>fork of JSFLAP</small></a></h1>
         </li>
         <li toggle-top-bar class="menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
@@ -54,7 +54,7 @@
                 <a href="#">Help</a>
                 <ul top-bar-dropdown>
                     <li><a href="#" ng-click="openHelpModal()"><i class="fa fa-question-circle"></i> Help</a></li>
-                    <li><a target="_blank" href="https://github.com/bgrawi/jsflap/issues" title="Report a Bug"><i class="fa fa-bug"></i> Repot a Bug</a></li>
+                    <li><a target="_blank" href="https://github.com/gilgameshskytrooper/jsflap/issues" title="Report a Bug"><i class="fa fa-bug"></i> Repot a Bug</a></li>
                 </ul>
             </li>
         </ul>
@@ -214,10 +214,12 @@
                     <i class="fa fa-play"></i>
                 </tab-heading>
                 <div class="text-heading">
-                    Simulate
+                    <!--<input action="/submittm" type="submit"></input>-->
+                    <h1>Ready to Test the Turing Machine?</h1>
                 </div>
                 <div class="text-subheading">
-                    Coming Soon!
+                    <!--Coming Soon!-->
+                    <a ng-click="saveToAutomatonDefinition()" href=""><i class="fa fa-file-text-o fa-fw"></i> Automaton Definition</a>
                 </div>
             </tab>
         </tabset>  

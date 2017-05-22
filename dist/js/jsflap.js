@@ -433,6 +433,15 @@
             $scope.saveToAutomatonDefinition = function() {
                 var src = "data:text/plain;base64," + btoa(unescape(encodeURIComponent(self.graph.toString())));
 
+                //var a = document.createElement("a");
+                //a.download = ($scope.graphMeta.title? $scope.graphMeta.title: "graph") + ".txt";
+                //a.href = src;
+                //a.click();
+                $http.post('/submit', src).then(successCallback, errorCallback);
+            };
+            $scope.submitTuringMachine = function() {
+                var src = "data:text/plain;base64," + btoa(unescape(encodeURIComponent(self.graph.toString())));
+
                 var a = document.createElement("a");
                 a.download = ($scope.graphMeta.title? $scope.graphMeta.title: "graph") + ".txt";
                 a.href = src;
